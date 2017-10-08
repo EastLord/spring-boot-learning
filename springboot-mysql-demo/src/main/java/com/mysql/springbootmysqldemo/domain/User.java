@@ -3,9 +3,11 @@ package com.mysql.springbootmysqldemo.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -18,7 +20,8 @@ public class User implements Serializable{
 
     private String name;
 
-    private String createDate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date createDate;
 
     @ManyToOne
     @JoinColumn(name = "did")

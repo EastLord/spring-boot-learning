@@ -56,10 +56,7 @@ public class MysqlTest {
         User user = new User();
         user.setName("user");
         user.setDepartment(department);
-        Date date = new Date();
-        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
-        String formattedDate = dateFormat.format(date);
-        user.setCreateDate(formattedDate);
+        user.setCreateDate(new Date());
 
         List<Role> roles = roleRepository.findAll();
         Assert.assertNotNull(roles);
