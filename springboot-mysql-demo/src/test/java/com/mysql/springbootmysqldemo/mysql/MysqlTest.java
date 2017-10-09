@@ -62,6 +62,15 @@ public class MysqlTest {
     }
 
     /**
+     * 测试自定义查找方法
+     */
+    @Test
+    public void findUser() {
+       User user = userRepository.findUser("user");
+        System.out.println(user.toString());
+    }
+
+    /**
      * Method initData
      *  初始化数据
      */
