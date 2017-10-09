@@ -21,7 +21,7 @@ public class User implements Serializable {
 
     /** Field 用户编号 */
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /** Field 用户名称 */
