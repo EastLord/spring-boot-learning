@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.*;
 
 import com.springboot.mybatis.domain.User;
 import com.springboot.mybatis.enums.UserGender;
+import org.springframework.stereotype.Repository;
 
 /**
  * Interface UserMapper
@@ -13,6 +14,7 @@ import com.springboot.mybatis.enums.UserGender;
  * @author DongJun
  * @version 1.0, 17/10/10
  */
+@Repository
 public interface UserMapper {
 
     /**
