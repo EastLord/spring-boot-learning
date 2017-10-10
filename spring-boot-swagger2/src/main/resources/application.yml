@@ -9,7 +9,7 @@ spring:
       # 下面为连接池的补充设置，应用到上面所有数据源中
       # 初始化大小，最小，最大
       initialSize: 1
-      minIdle: 3
+      minIdle: 2
       maxActive: 20
       # 配置获取连接等待超时的时间
       maxWait: 60000
@@ -17,7 +17,7 @@ spring:
       timeBetweenEvictionRunsMillis: 60000
       # 配置一个连接在池中最小生存的时间，单位是毫秒
       minEvictableIdleTimeMillis: 30000
-      validationQuery: select 'x'
+      validationQuery: SELECT 1 FROM DUAL
       testWhileIdle: true
       testOnBorrow: false
       testOnReturn: false
@@ -30,7 +30,6 @@ spring:
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       # 合并多个DruidDataSource的监控数据
       #useGlobalDataSourceStat: true
-
   jpa:
     show-sql: true
     properties:

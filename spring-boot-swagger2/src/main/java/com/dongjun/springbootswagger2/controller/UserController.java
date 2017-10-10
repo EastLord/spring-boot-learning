@@ -33,7 +33,7 @@ public class UserController {
     }
 
     @ApiOperation(value="获取用户详细信息", notes="根据url的id来获取用户详细信息")
-    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer")
+    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer",paramType = "path")
     @GetMapping(value = "/{id}")
     public User getUser(@PathVariable Integer id) {
         return userRepository.findById(id);
@@ -41,7 +41,7 @@ public class UserController {
 
     @ApiOperation(value="更新用户详细信息", notes="根据url的id来指定更新对象，并根据传过来的user信息来更新用户详细信息")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer"),
+            @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer",paramType = "path"),
             @ApiImplicitParam(name = "user", value = "用户详细实体user", required = true, dataType = "User")
     })
     @PutMapping(value = "/{id}")
@@ -55,7 +55,7 @@ public class UserController {
     }
 
     @ApiOperation(value="删除用户", notes="根据url的id来指定删除对象")
-    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer")
+    @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer",paramType = "path")
     @DeleteMapping(value = "/{id}")
     public String deleteUser(@PathVariable Integer id) {
         userRepository.deleteById(id);
