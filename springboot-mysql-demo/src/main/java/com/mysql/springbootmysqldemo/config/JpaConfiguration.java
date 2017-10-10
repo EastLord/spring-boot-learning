@@ -1,6 +1,5 @@
 package com.mysql.springbootmysqldemo.config;
 
-
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +9,12 @@ import org.springframework.dao.annotation.PersistenceExceptionTranslationPostPro
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-
+/**
+ * Class JpaConfiguration
+ *
+ * @version        1.0, 17/10/10
+ * @author         DongJun
+ */
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
@@ -18,6 +22,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EntityScan(basePackages = "com.**.domain")
 public class JpaConfiguration {
 
+    /**
+     * Method persistenceExceptionTranslationPostProcessor
+     *
+     * @return PersistenceExceptionTranslationPostProcessor
+     */
     @Bean
     PersistenceExceptionTranslationPostProcessor persistenceExceptionTranslationPostProcessor() {
         return new PersistenceExceptionTranslationPostProcessor();
