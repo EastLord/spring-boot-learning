@@ -3,4 +3,4 @@ package com.springboot.mybatis.enums;
 /**
  * Enum UserGender
  */
-public enum UserGender { MAN, WOMNAN, Intersex }
+public enum UserGender { MAN, WOMNAN, INTERSEX }

@@ -3,4 +3,4 @@ package com.mybatis.demo.enums;
 /**
  * Enum UserGender
  */
-public enum UserGender { MAN, WOMNAN, Intersex }
+public enum UserGender { MAN, WOMNAN, INTERSEX }
