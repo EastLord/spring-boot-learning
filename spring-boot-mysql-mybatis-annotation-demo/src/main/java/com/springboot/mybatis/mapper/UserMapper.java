@@ -30,4 +30,8 @@ public interface UserMapper {
 
     @Delete("DELETE FROM user WHERE id = #{id}")
     void deleteById(Integer id);
+
+    @Update("UPDATE user SET user_name = #{userName},nick_name = #{nickName}," +
+            "password = #{password},gender = #{gender}")
+    void update(User user);
 }
