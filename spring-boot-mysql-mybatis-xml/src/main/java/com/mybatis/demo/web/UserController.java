@@ -1,4 +1,4 @@
-package com.mybatis.demo.controller;
+package com.mybatis.demo.web;
 
 import java.util.List;
 

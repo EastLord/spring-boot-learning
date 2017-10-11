@@ -1,12 +1,10 @@
-package com.dongjun.springbootswagger2.controller;
+package com.dongjun.springbootswagger2.web;
 
 import com.dongjun.springbootswagger2.domain.User;
 import com.dongjun.springbootswagger2.domain.UserRepository;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -59,7 +57,6 @@ public class UserController {
     @ApiOperation(value="删除用户", notes="根据url的id来指定删除对象")
     @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer",paramType = "path")
     @DeleteMapping(value = "/{id}")
-    @Transactional
     public String deleteUser(@PathVariable Integer id) {
         userRepository.deleteById(id);
         return "success";

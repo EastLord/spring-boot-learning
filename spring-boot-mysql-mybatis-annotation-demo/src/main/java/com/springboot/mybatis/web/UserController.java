@@ -1,4 +1,4 @@
-package com.springboot.mybatis.controller;
+package com.springboot.mybatis.web;
 
 import java.util.List;
 
