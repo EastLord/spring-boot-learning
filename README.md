@@ -8,6 +8,7 @@
 - [spring boot mysql jpa](https://github.com/EastLord/spring-boot-learning/tree/master/springboot-mysql-demo)
 - [spring boot mysql mybatis annotation](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-mysql-mybatis-annotation-demo)
 - [spring boot mysql mybatis xml](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-mysql-mybatis-xml)
+- [spring boot swagger2](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-swagger2)     spring boot 整合 jpa Swagger2 构建RESTful APIs
 
 
 
