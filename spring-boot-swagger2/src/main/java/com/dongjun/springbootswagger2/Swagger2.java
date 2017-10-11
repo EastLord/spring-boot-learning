@@ -22,7 +22,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.dongjun.springbootswagger2.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.**.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
