@@ -19,4 +19,30 @@
         FROM user
     </select>
 
+    <select id="findById" parameterType="java.lang.Integer" resultMap="UserResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM user
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.mybatis.demo.domain.User" >
+        INSERT INTO user (user_name, nick_name, password, gender)
+        VALUES (#{userName}, #{nickName}, #{password}, #{gender})
+    </insert>
+
+    <update id="update" parameterType="com.mybatis.demo.domain.User">
+        UPDATE user
+        SET 
+          <if test="userName != null">user_name = #{userName},</if>
+          <if test="password != null">password = #{password},</if>
+          nick_name = #{nickName}
+        WHERE
+          id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        DELETE FROM user
+        WHERE id = #{id}
+    </delete>
 </mapper>
