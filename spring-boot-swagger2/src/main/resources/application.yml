@@ -10,3 +10,7 @@ spring:
       hibernate:
         hbm2ddl:
           auto: update
+  #开启颜色输出
+  output:
+    ansi:
+      enabled: always

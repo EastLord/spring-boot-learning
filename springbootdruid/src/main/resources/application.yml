@@ -41,3 +41,7 @@ spring:
       hibernate:
         hbm2ddl:
           auto: update
+  #¿ªÆôÑÕÉ«Êä³ö
+  output:
+    ansi:
+      enabled: always
