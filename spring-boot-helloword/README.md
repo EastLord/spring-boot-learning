@@ -24,7 +24,7 @@
                         SpringBootHellowordApplicationTests.java
 ```
 
-1.在pom.xml中添加Maven 依赖:
+**1.在pom.xml中添加Maven 依赖:**
 
 ```xml
 <dependency>
@@ -33,7 +33,7 @@
 </dependency>
 ```
 
-2.在controller中编写如下内容:
+**2.在controller中编写如下内容:**
 
 ```java
 @RestController
