@@ -57,4 +57,4 @@ public class HelloWorldController {
 
 启动项目后访问http://localhost:8080
 
-![](../image/1-1.png)
+![](https://raw.githubusercontent.com/EastLord/spring-boot-learning/master/image/1-1.png)
