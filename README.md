@@ -2,6 +2,8 @@
 
 `	git clone https://github.com/EastLord/spring-boot-learning.git`
 
+创建项目时建议使用IDEA的Spring Initializr
+
 ​	用IDEA打开项目，在右侧的maven projects 中点击Add Maven Projects按钮（绿色的加号），添加相应模块的pom.xml即可
 
 - [spring-boot-helloworld](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-helloword)

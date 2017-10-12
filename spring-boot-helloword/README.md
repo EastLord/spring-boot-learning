@@ -1,7 +1,60 @@
 # spring boot hello world 
 
-就是一个spring boot版本的hello world
+项目结构图
 
-启动项目后访问 http://localhost:8080 即可看到效果
+```
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─dongjun
+│  │          └─springboothelloword
+│  │              │  SpringBootHellowordApplication.java
+│  │              │  
+│  │              └─web
+│  │                      HelloWorldController.java
+│  │                      
+│  └─resources
+│          application.yml
+│          
+└─test
+    └─java
+        └─com
+            └─dongjun
+                └─springboothelloword
+                        SpringBootHellowordApplicationTests.java
+```
 
-没啥好BB的
+1.在pom.xml中添加Maven 依赖:
+
+```xml
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
+
+2.在controller中编写如下内容:
+
+```java
+@RestController
+public class HelloWorldController {
+
+    /**
+     * Method HelloWorld
+     *
+     * @return String
+     */
+    @GetMapping(value = "/")
+    public String HelloWorld() {
+        return "Hello World!";
+    }
+}
+```
+
+@RestController注解相当于@ResponseBody ＋ @Controller合在一起的作用
+
+此controller的方法会以json格式输出
+
+启动项目后访问http://localhost:8080
+
+![](../image/1-1.png)
