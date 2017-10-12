@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springboot</groupId>
-	<artifactId>mybatis</artifactId>
+	<artifactId>spring-boot-mysql-mybatis-annotation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>mybatis</name>
+	<name>spring-boot-mysql-mybatis-annotation</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

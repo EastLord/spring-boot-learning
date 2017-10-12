@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.dongjun</groupId>
-	<artifactId>springbootswagger2</artifactId>
+	<artifactId>spring-boot-swagger2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>springbootswagger2</name>
+	<name>spring-boot-swagger2</name>
 	<description>Demo project for Spring Boot with Swagger2</description>
 
 	<parent>
