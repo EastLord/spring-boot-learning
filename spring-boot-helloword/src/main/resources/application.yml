@@ -1,5 +1,0 @@
-#开启颜色输出
-spring:
-  output:
-    ansi:
-      enabled: always
