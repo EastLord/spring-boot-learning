@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link href="../static/bootstrap/dist/css/bootstrap.min.css" th:href="@{/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet">
+    <link href="../static/bootstrap/dist/css/bootstrap-theme.min.css" th:href="@{/bootstrap/dist/css/bootstrap-theme.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="form-group">
+        <div class="col-sm-2 control-label">
+            <a th:href="@{/toAdd}" class="btn btn-info">增加</a>
+        </div>
+    </div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>用户名</th>
+            <th>性别</th>
+            <th>城市</th>
+            <th>积分</th>
+            <th>职业</th>
+            <th>财富</th>
+            <th>评分</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--/*@thymesVar id="users" type=""*/-->
+        <tr th:each="user : ${users}">
+            <!--/*@thymesVar id="user" type="com.dongjun.demo.entity.User"*/-->
+            <td th:text="${user.id}">id</td>
+            <td th:text="${user.username}">username</td>
+            <td th:text="${user.gender}">gender</td>
+            <td th:text="${user.city}">city</td>
+            <td th:text="${user.experience}">experience</td>
+            <td th:text="${user.classify}">classify</td>
+            <td th:text="${user.logins}">logins</td>
+            <td th:text="${user.score}">score</td>
+            <td>
+                <a type="button" class="btn btn-primary" th:href="@{/toEdit(id=${user.id})}" >编辑</a>
+                <a type="button" class="btn btn-danger" th:href="@{/delete(id=${user.id})}" >删除</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<script th:src="@{/bootstrap/dist/js/jquery.min.js}"></script>
+<script th:src="@{/bootstrap/dist/js/bootstrap.min.js}"></script>
+</body>
+</html>
