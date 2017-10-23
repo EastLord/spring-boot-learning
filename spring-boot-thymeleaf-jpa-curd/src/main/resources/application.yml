@@ -12,7 +12,6 @@ spring:
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
-  #¿ªÆôÑÕÉ«Êä³ö
   output:
     ansi:
       enabled: always
