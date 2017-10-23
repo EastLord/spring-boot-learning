@@ -1,4 +1,4 @@
-package com.dongjun.springbootswagger2.domain;
+package com.dongjun.springbootswagger2.entity;
 
 import com.dongjun.springbootswagger2.enums.UserGender;
 import lombok.Data;

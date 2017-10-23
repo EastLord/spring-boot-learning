@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springboot.mybatis.domain.User;
+import com.springboot.mybatis.entity.User;
 import com.springboot.mybatis.mapper.UserMapper;
 
 /**

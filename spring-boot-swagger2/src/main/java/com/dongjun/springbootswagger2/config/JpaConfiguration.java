@@ -18,8 +18,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
-@EnableJpaRepositories(basePackages = "com.**.domain")
-@EntityScan(basePackages = "com.**.domain")
+@EnableJpaRepositories(basePackages = "com.**.entity")
+@EntityScan(basePackages = "com.**.entity")
 public class JpaConfiguration {
 
     /**

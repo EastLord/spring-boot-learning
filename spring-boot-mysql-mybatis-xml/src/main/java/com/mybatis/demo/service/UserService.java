@@ -2,7 +2,7 @@ package com.mybatis.demo.service;
 
 import java.util.List;
 
-import com.mybatis.demo.domain.User;
+import com.mybatis.demo.entity.User;
 
 /**
  * Interface UserService

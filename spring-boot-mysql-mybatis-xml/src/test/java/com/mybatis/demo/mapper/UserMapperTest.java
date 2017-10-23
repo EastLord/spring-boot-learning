@@ -1,6 +1,6 @@
 package com.mybatis.demo.mapper;
 
-import com.mybatis.demo.domain.User;
+import com.mybatis.demo.entity.User;
 import com.mybatis.demo.enums.UserGender;
 
 import java.sql.SQLException;

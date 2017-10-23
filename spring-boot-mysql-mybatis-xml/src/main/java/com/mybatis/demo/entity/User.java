@@ -1,4 +1,4 @@
-package com.mybatis.demo.domain;
+package com.mybatis.demo.entity;
 
 
 import com.mybatis.demo.enums.UserGender;

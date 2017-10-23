@@ -1,4 +1,4 @@
-package com.druid.springbootdruid.domain;
+package com.dongjun.springbootswagger2.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;

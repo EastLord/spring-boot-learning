@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.*;
 
-import com.springboot.mybatis.domain.User;
+import com.springboot.mybatis.entity.User;
 import com.springboot.mybatis.enums.UserGender;
 import org.springframework.stereotype.Repository;
 

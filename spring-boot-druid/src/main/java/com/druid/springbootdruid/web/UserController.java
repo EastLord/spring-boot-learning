@@ -1,7 +1,7 @@
 package com.druid.springbootdruid.web;
 
-import com.druid.springbootdruid.domain.User;
-import com.druid.springbootdruid.domain.UserRepository;
+import com.druid.springbootdruid.entity.User;
+import com.druid.springbootdruid.entity.UserRepository;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

@@ -1,4 +1,4 @@
-package com.springboot.mybatis.domain;
+package com.springboot.mybatis.entity;
 
 import java.io.Serializable;
 

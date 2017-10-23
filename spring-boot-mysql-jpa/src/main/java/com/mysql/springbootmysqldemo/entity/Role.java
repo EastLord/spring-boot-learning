@@ -1,4 +1,4 @@
-package com.mysql.springbootmysqldemo.domain;
+package com.mysql.springbootmysqldemo.entity;
 
 import lombok.Data;
 

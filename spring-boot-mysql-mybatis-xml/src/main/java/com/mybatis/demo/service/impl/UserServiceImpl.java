@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mybatis.demo.domain.User;
+import com.mybatis.demo.entity.User;
 import com.mybatis.demo.mapper.UserMapper;
 import com.mybatis.demo.service.UserService;
 

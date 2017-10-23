@@ -1,7 +1,7 @@
 package com.dongjun.springbootswagger2.web;
 
-import com.dongjun.springbootswagger2.domain.User;
-import com.dongjun.springbootswagger2.domain.UserRepository;
+import com.dongjun.springbootswagger2.entity.User;
+import com.dongjun.springbootswagger2.entity.UserRepository;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

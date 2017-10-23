@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mybatis.demo.domain.User;
+import com.mybatis.demo.entity.User;
 import com.mybatis.demo.service.UserService;
 
 /**

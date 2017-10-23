@@ -1,7 +1,5 @@
-package com.druid.springbootdruid.domain;
+package com.mysql.springbootmysqldemo.entity;
 
-
-import com.druid.springbootdruid.enums.UserGender;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -10,19 +8,21 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+/**
+ * Class Department
+ *
+ * @version        1.0, 17/10/08
+ * @author         qiutiandong
+ */
 @Entity
 @Data
-public class User implements Serializable{
+public class Department implements Serializable {
 
+    /** Field 部门编号 */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String userName;
-
-    private String nickName;
-
-    private String password;
-
-    private UserGender gender;
+    /** Field 部门名称 */
+    private String name;
 }
