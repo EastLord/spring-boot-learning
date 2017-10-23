@@ -10,6 +10,7 @@
 - [spring-boot-mysql-mybatis-xml](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-mysql-mybatis-xml)
 - [spring-boot-swagger2](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-swagger2)     spring boot 整合 jpa Swagger2 构建RESTful APIs  
 - [spring-boot-druid](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-druid)   在[spring-boot-swagger2](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-swagger2)  这个例子基础上整合了阿里数据库连接池druid
+- [spring-boot-thymeleaf-jpa-curd](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-thymeleaf-jpa-curd) 应用了spring boot官方推荐的模板引擎Thymeleaf，持久层使用JPA，并启用热部署spring-boot-devtools
 
 
 使用IDEA的Spring Initializr 新建项目:
