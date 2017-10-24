@@ -23,7 +23,7 @@ public class UserRepositoryTest {
     public void testSave() {
         User user = new User();
         Random random = new Random();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i <= 20; i++) {
             user.setId(i);
             user.setCity("北京");
             user.setClassify("学生");
