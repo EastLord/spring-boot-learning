@@ -132,3 +132,13 @@ spring:
       enabled: always
 ```
 
+**4.运行UserRepositoryTest测试类，初始化数据**
+
+**5.运行项目后访问http://localhost:8080**
+
+![](https://raw.githubusercontent.com/EastLord/spring-boot-learning/master/image/7-4.png)
+
+![](https://raw.githubusercontent.com/EastLord/spring-boot-learning/master/image/7-5.png)
+
+![](https://raw.githubusercontent.com/EastLord/spring-boot-learning/master/image/7-6.png)
+
