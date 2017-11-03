@@ -65,7 +65,7 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter implements Applicat
 	@Profile("dev")
 	public FileTemplateResolver fileTemplateResolver() {
 		final FileTemplateResolver templateResolver = new FileTemplateResolver();
-		templateResolver.setPrefix("classpath:/templates/");
+		templateResolver.setPrefix("classpath:templates/");
 		templateResolver.setSuffix(".html");
 		templateResolver.setTemplateMode(TemplateMode.HTML);
 		templateResolver.setCacheable(false);
