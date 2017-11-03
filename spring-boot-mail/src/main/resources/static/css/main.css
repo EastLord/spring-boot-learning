@@ -1,0 +1,17 @@
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    background: #D7EBAD url(../images/thymeleaf-logo.png) no-repeat 10px 10px;
+    border: solid 1px #96A479;
+    border-radius: 6px;
+    min-height: 90px;
+    padding-left: 90px;
+    line-height: 90px;
+}
+
+p.title {
+    font-weight: bold;
+}
