@@ -21,8 +21,6 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
  */
 @Configuration
 public class SpringWebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
-	@Value("${thymeleaf.template.path}")
-	private String thymeleafTemplatePath;
 
 	private ApplicationContext applicationContext;
 
@@ -56,7 +54,7 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter implements Applicat
 	public SpringResourceTemplateResolver templateResolver() {
 		final SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
 		// templateResolver.setApplicationContext(this.applicationContext);
-		templateResolver.setPrefix("classpath:/templates/");
+		templateResolver.setPrefix("classpath:templates/");
 		templateResolver.setSuffix(".html");
 		templateResolver.setTemplateMode(TemplateMode.HTML);
 		templateResolver.setCacheable(true);
@@ -67,7 +65,7 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter implements Applicat
 	@Profile("dev")
 	public FileTemplateResolver fileTemplateResolver() {
 		final FileTemplateResolver templateResolver = new FileTemplateResolver();
-		templateResolver.setPrefix(thymeleafTemplatePath);
+		templateResolver.setPrefix("classpath:/templates/");
 		templateResolver.setSuffix(".html");
 		templateResolver.setTemplateMode(TemplateMode.HTML);
 		templateResolver.setCacheable(false);
