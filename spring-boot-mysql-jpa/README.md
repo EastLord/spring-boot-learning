@@ -103,6 +103,18 @@ spring:
       enabled: always
 ```
 
+> 在使用spring boot jpa的情况下设置spring.jpa.hibernate.ddl-auto的属性设置为 create or create-drop的时候，spring boot 启动时默认会扫描classpath下面（项目中一般是resources目录）是否有import.sql，如果有机会执行import.sql脚本。
+
+```yaml
+spring:
+    datasource:
+      schema: database/data.sql
+      sql-script-encoding: utf-8
+```
+
+- schema ：设置脚本的路径
+- sql-script-encoding：设置脚本的编码
+
 **3.实体建模:**
 
 ![](https://raw.githubusercontent.com/EastLord/spring-boot-learning/master/image/2-1.png)

@@ -1,4 +1,4 @@
-# spring boot hello world 
+# spring boot thymeleaf jpa curd 
 
 项目结构图
 
@@ -142,3 +142,27 @@ spring:
 
 ![](https://raw.githubusercontent.com/EastLord/spring-boot-learning/master/image/7-6.png)
 
+**6.注意事项:**
+
+thymeleaf 设置不校验html标签:
+
+默认配置下，thymeleaf对.html的内容要求很严格，比如，如果少封闭符号/，就会报错而转到错误页。也比如你在使用Vue.js这样的库，然后有<div v-cloak></div>这样的html代码，也会被thymeleaf认为不符合要求而抛出错误。
+
+通过设置thymeleaf模板可以解决这个问题，下面是具体的配置:
+
+```properties
+spring.thymeleaf.cache=false
+spring.thymeleaf.mode=LEGACYHTML5
+```
+
+LEGACYHTML5需要搭配一个额外的库NekoHTML才可用 项目中使用的构建工具是Maven添加如下的依赖即可完成:
+
+```xml
+<dependency>
+	<groupId>net.sourceforge.nekohtml</groupId>
+	<artifactId>nekohtml</artifactId>
+	<version>1.9.22</version>
+</dependency>
+```
+
+参考:[thymeleaf模板对没有结束符的HTML5标签解析出错的解决办法](http://blog.csdn.net/yalishadaa/article/details/60768811)
