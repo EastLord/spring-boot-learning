@@ -1,4 +1,4 @@
-在spring boot swagger2 示例的基础上整合了阿里巴巴数据库连接池Druid
+# spring-boot-druid
 
 项目结构:
 

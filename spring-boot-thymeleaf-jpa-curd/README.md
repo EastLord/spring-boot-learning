@@ -1,4 +1,4 @@
-# spring boot thymeleaf jpa curd 
+# spring-boot-thymeleaf-jpa-curd 
 
 项目结构图
 

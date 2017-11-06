@@ -1,3 +1,5 @@
+# spring-boot-mail
+
 项目结构图：
 
 ```
