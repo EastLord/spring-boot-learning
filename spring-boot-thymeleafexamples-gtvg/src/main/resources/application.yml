@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+      cache: false
+      mode: LEGACYHTML5
+  messages:
+    basename: templates/home,templates/subscribe,templates/product/list
