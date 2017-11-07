@@ -33,7 +33,14 @@
                             MysqlTest.java
 ```
 
-**1.在pom.xml中添加Maven 依赖:**
+JPA关系概念：
+
+- 一对多：@OneToOne
+- 一对多：@OneToMany
+- 多对一：@ManyToOne
+- 多对多：@ManyToMany
+
+1.在pom.xml中添加Maven 依赖:**
 
 ```xml
       <dependency>
