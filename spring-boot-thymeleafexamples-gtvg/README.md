@@ -14,6 +14,16 @@ Thymeleaf 是一个跟 Velocity、FreeMarker 类似的模板引擎，它可以�
 - 2.Thymeleaf 开箱即用的特性。它提供标准和spring标准两种方言，可以直接套用模板实现JSTL、 OGNL表达式效果，避免每天套模板、该jstl、改标签的困扰。同时开发人员也可以扩展和创建自定义的方言。
 - 3.Thymeleaf 提供spring标准方言和一个与 SpringMVC 完美集成的可选模块，可以快速的实现表单绑定、属性编辑器、国际化等功能。
 
+**html页面需引入命名空间：(th为必须，layout非必须)**
+
+```html
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+```
+
+**修改页面图标方法：**
+
+将favicon.ico放置在static目录下
+
 ## 标准表达式语法
 
 - 1.变量表达式
