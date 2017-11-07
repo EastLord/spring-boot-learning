@@ -1,6 +1,6 @@
 package com.thymeleaf.example.demo.repository;
 
-import com.thymeleaf.example.demo.Util.CalendarUtil;
+import com.thymeleaf.example.demo.util.CalendarUtil;
 import com.thymeleaf.example.demo.entity.Customer;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.thymeleaf.example.demo.Util;
+package com.thymeleaf.example.demo.util;
 
 import java.util.Calendar;
 
