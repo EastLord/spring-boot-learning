@@ -2,9 +2,9 @@
 
 Thymeleaf官方网站上的示例进行修改的spring boot版本
 
-官网地址:http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#what-is-thymeleaf
+官网地址:http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html
 
-参考：纯洁的微笑博客
+参考：纯洁的微笑 http://www.ityouknow.com/spring-boot
 
 启动项目后访问:http://localhost:8080
 
@@ -111,7 +111,7 @@ URL还可以设置参数： ` @{/order/details(id=${orderId})} `
 
 当然，美元符号和星号语法可以混合使用：
 
-```xml
+```html
   <div th:object="${session.user}">
 	  <p>Name: <span th:text="*{firstName}">Sebastian</span>.</p>
   	  <p>Surname: <span th:text="${session.user.lastName}">Pepper</span>.</p>
@@ -164,7 +164,7 @@ URL还可以设置参数： ` @{/order/details(id=${orderId})} `
 ## 常用th标签都有那些？
 
 | 关键字         | 功能介绍                   | 案例                                       |
-| ----------- | ---------------------- | ---------------------------------------- |
+| :---------- | :--------------------- | :--------------------------------------- |
 | th:id       | 替换id                   | `<input th:id="'xxx' + ${collect.id}"/>` |
 | th:text     | 文本替换                   | `<p th:text="${collect.description}">description</p>` |
 | th:utext    | 支持html的文本替换            | `<p th:utext="${htmlcontent}">conten</p>` |
