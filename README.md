@@ -5,6 +5,7 @@
 ​	用IDEA打开项目，在右侧的maven projects 中点击Add Maven Projects按钮（绿色的加号），添加相应模块的pom.xml即可
 
 - [spring-boot-helloworld](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-helloword) spring boot hello world 示例
+- [spring-boot-banner](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-banner) spring boot 自定义banner
 - [spring-boot-mysql-jpa](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-mysql-jpa) spring boot 整合JPA
 - [spring-boot-mysql-mybatis-annotation](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-mysql-mybatis-annotation) spring boot 整合mybatis注解示例
 - [ spring-boot-mysql-mybatis-xml](https://github.com/EastLord/spring-boot-learning/tree/master/spring-boot-mysql-mybatis-xml) spring boot 整合mybatis xml示例
