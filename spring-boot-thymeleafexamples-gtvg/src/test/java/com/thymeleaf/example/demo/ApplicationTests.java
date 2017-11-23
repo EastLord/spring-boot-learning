@@ -1,4 +1,4 @@
-package com.dongjun.springbootswagger2;
+package com.thymeleaf.example.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Springbootswagger2ApplicationTests {
+public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {

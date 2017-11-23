@@ -1,4 +1,4 @@
-package com.dongjun.mail.demo;
+package com.mybatis.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringBootMailApplicationTests {
+public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {

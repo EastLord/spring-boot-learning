@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author         qiutiandong
  */
 @SpringBootApplication
-public class SpringBootMailApplication {
+public class Application {
 
 	/**
 	 * Method main
@@ -19,6 +19,6 @@ public class SpringBootMailApplication {
 	// 程序启动入口
 	// 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootMailApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }

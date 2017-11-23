@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.springboot.mybatis.mapper")
-public class MybatisApplication {
+public class Application {
 
     /**
      * Method main
@@ -23,6 +23,6 @@ public class MybatisApplication {
     // 程序启动入口
     // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
     public static void main(String[] args) {
-        SpringApplication.run(MybatisApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
