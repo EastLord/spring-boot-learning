@@ -1,0 +1,8 @@
+property:
+  values:
+    password: ${random.value}
+    intValue: ${random.int}
+    intValueRange: ${random.int[1,99]}
+    longValue: ${random.long}
+    longValueRange: ${random.long[111111111111,999999999999]}
+    uuid: ${random.uuid}
