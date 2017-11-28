@@ -240,7 +240,7 @@ th:unless于th:if恰好相反，只有表达式中的条件不成立，才会显
      <td th:text="${collect.url}">Mark</td>
      <td th:text="${collect.title}">Otto</td>
      <td th:text="${collect.description}">@mdo</td>
-     <td th:text="${terStat.index}">index</td>
+     <td th:text="${iterStat.index}">index</td>
  </tr>
 ```
 

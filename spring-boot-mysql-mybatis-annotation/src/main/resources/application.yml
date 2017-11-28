@@ -9,4 +9,4 @@ spring:
     ansi:
       enabled: always
 mybatis:
-  type-aliases-package: com.springboot.mybatis.domain
+  type-aliases-package: com.springboot.mybatis.entity

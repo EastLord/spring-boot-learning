@@ -27,6 +27,7 @@ public class UserServiceImpl implements UserService {
      *
      * @return List<User>
      */
+    @Override
     public List<User> findAll() {
         return userMapper.findAll();
     }
