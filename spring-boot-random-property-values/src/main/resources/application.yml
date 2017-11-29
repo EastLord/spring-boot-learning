@@ -6,3 +6,7 @@ property:
     longValue: ${random.long}
     longValueRange: ${random.long[111111111111,999999999999]}
     uuid: ${random.uuid}
+spring:
+  output:
+    ansi:
+      enabled: always

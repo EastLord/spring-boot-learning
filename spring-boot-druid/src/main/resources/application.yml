@@ -33,7 +33,6 @@ spring:
       web-stat-filter:
         enabled: true
         url-pattern: /*
-        #在这儿被坑了挺长时间
         exclusions: /druid/*,*.js,*.gif,*.jpg,*.png,*.css,*.ico
   jpa:
     show-sql: true
@@ -41,7 +40,6 @@ spring:
       hibernate:
         hbm2ddl:
           auto: update
-  #开启颜色输出
   output:
     ansi:
       enabled: always

@@ -4,3 +4,6 @@ spring:
       mode: LEGACYHTML5
   messages:
     basename: templates/home,templates/subscribe,templates/product/list
+  output:
+    ansi:
+      enabled: always

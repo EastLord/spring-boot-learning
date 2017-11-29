@@ -8,4 +8,4 @@ spring:
   mail:
     default-encoding: UTF-8
 server:
-  port: 8088
+  port: 8080

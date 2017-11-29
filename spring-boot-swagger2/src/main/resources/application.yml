@@ -10,6 +10,7 @@ spring:
       hibernate:
         hbm2ddl:
           auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
   #开启颜色输出
   output:
     ansi:
