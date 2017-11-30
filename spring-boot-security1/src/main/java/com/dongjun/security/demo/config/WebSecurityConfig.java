@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 /**
- * Created by yangyibo on 17/1/18.
+ * @author dongjun
  */
 @Configuration
 @EnableWebSecurity
