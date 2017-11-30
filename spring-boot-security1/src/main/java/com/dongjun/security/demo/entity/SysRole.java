@@ -1,15 +1,20 @@
 package com.dongjun.security.demo.entity;
 
-import lombok.Data;
+import lombok.*;
+import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 /**
  * @author dongjun
  */
 @Entity
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "sys_role")
 public class SysRole implements Serializable{
 
@@ -26,5 +31,8 @@ public class SysRole implements Serializable{
      */
     @Column(name = "name")
     private String name;
+
+    @ManyToMany(mappedBy = "roles")
+    private Set<SysUser> users;
 
 }

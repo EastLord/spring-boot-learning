@@ -1,5 +1,5 @@
 insert into sys_user (id,user_name, password) values (1,'admin', 'admin');
-insert into sys_user (id,user_name, password) values (2,'dongjun', '123456');
+insert into sys_user (id,user_name, password) values (2,'user', '123456');
 
 insert into sys_role(id,name) values(1,'ROLE_ADMIN');
 insert into sys_role(id,name) values(2,'ROLE_USER');

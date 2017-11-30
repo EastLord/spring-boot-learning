@@ -2,6 +2,7 @@ package com.dongjun.security.demo.service;
 
 import com.dongjun.security.demo.entity.SysRole;
 import com.dongjun.security.demo.entity.SysUser;
+import com.dongjun.security.demo.repository.SysUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -17,15 +18,15 @@ import java.util.List;
  * @author dongjun
  */
 @Service
-public class CustomUserService implements UserDetailsService{
+public class CustomUserServiceImpl implements UserDetailsService{
 
     @Autowired
-    private UserService userService;
+    private SysUserRepository userRepository;
 
     @Override
     public UserDetails loadUserByUsername(String username) {
 
-        SysUser user = userService.findByUsername(username);
+        SysUser user = userRepository.findByUsername(username);
 
         if (user==null) {
             throw new UsernameNotFoundException("用户名不存在");
@@ -38,6 +39,6 @@ public class CustomUserService implements UserDetailsService{
             System.out.println(role.getName());
         }
 
-        return new User(user.getUsername(), user.getPassword(), authorities);
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), authorities);
     }
 }

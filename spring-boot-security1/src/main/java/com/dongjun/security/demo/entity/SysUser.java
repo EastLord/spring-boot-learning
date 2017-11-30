@@ -1,16 +1,19 @@
 package com.dongjun.security.demo.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Set;
 
 /**
  * @author dongjun
  */
 @Entity
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "sys_user")
 public class SysUser implements Serializable{
 
@@ -37,12 +40,12 @@ public class SysUser implements Serializable{
     /**
      * 权限列表
      */
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinTable(
             name = "sys_role_user",
             inverseJoinColumns = @JoinColumn(name = "user_id"),
             joinColumns = @JoinColumn(name = "role_id")
     )
-    private List<SysRole> roles;
+    private Set<SysRole> roles;
 
 }
